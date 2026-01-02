@@ -21,6 +21,8 @@ export default function Registerform() {
         confirmpassword:Yup.string().required("Required")
       })}
       onSubmit={(values, { setSubmitting,resetForm }) => {
+        console.log("cliked !!");
+        
         var record = JSON.stringify(values);
         // console.log(record);
         // console.log(process.env.REACT_APP_API);
